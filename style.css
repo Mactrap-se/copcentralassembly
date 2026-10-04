@@ -1,0 +1,114 @@
+:root {
+    --yellow: #fbc02d;
+    --blue: #1976d2;
+    --red: #d32f2f;
+    --bg-light: #f5f5f5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: #333;
+}
+
+.header {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.header .logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.lang-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--yellow);
+    border: none;
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card {
+    background: white;
+    margin: 12px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.service-card {
+    background: #e3f2fd;
+    border-left: 5px solid var(--yellow);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.btn-blue {
+    background-color: var(--blue);
+}
+
+.btn-blue:hover {
+    background-color: #1565c0;
+}
+
+.admin-login-btn {
+    background: none;
+    border: none;
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.admin-box {
+    display: none;
+    background: white;
+    margin: 12px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px dashed #1976d2;
+}
+span{
+    color:rgb(210, 210, 75);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

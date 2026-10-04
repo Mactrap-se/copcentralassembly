@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COP - Central Assembly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <button class="lang-btn" onclick="toggleLang()" id="langBtn">TWI</button>
+        <img src="./images/logo.jpg" class="logo" alt="COP Logo">
+        <h1 style="margin:0; font-size:20px">THE CHURCH OF PENTECOST</h1>
+        <p style="margin:4px; font-weight:bold">Central Assembly - Tema</p>
+        <p style="font-size:12px">📅 <span id="todayDate"></span></p>
+    </div>
+
+    <div class="card service-card">
+        <h3 id="txtService">📖 Sunday Service Order</h3>
+        <p><b>10:30 AM</b> - <span class="t2">Main Service</span></p>
+        <p><b id="txtPreacher">Head Pastor:</b> Pastor Sampson Dzefe</p>
+      <p><b id="txtPreacher">Presiding Elder:</b> Elder.Daniel Ghanson</p>
+        <p><b id="txtTheme">2026 Theme:</b> The church Unleashed to <span>Transform Society</span> through the <span>Gospel</span>and the Power of the <span>Holy Spirit</span></p>
+    </div>
+
+    <div id="announcementsList"></div>
+
+    <div class="card">
+        <h3 id="txtPrayerTitle">🙏 Prayer Request / Mpaebɔ</h3>
+        <input id="pName" placeholder="Your Name / Wo Din">
+        <textarea id="pRequest" placeholder="Prayer request / Wo mpaebɔ..."></textarea>
+        <button class="btn btn-blue" onclick="sendPrayer()" id="txtPrayerBtn">Submit / Fa Kɔ</button>
+    </div>
+
+    <div style="text-align:center; padding:10px">
+        <button onclick="showAdmin()" class="admin-login-btn" id="txtAdmin">Admin Login</button>
+    </div>
+
+    <div class="admin-box" id="adminBox">
+    <h3>Admin Panel</h3>
+    <input id="adminPass" type="password" placeholder="Password ">
+    
+    <div style="margin-top:10px; border-top:1px solid #ccc; padding-top:10px;">
+        <h4 style="margin:5px 0;">➕ Add New Announcement</h4>
+        <input id="aTitle" placeholder="Title EN / Twi">
+        <textarea id="aDesc" placeholder="Details..."></textarea>
+        <input id="aDate" type="date">
+        <select id="backupOpt">
+            <option value="local">Phone Only</option>
+            <option value="sheet">+ Google Sheet Backup</option>
+        </select>
+        <button class="btn btn-blue" onclick="addAnnouncement()">Post Announcement</button>
+    </div>
+
+    <div style="margin-top:15px; border-top:1px solid #ccc; padding-top:10px;">
+        <h4 style="margin:5px 0;">🗑️ Manage / Delete Announcements</h4>
+        <div id="adminManageList"></div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
